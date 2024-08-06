@@ -1,127 +1,113 @@
 // Nav [a] Links  Data.......................
-export const navLinks =[
+export const navLinks = [
+  {
+    name: "Trang chủ",
+    path: "/",
+  },
+  {
+    name: "Thư viện sách",
+    path: "/products",
+  },
+  {
+    name: "Sách mới",
+    path: "/newsProducts",
+  },
+  {
+    name: "Diễn đàn",
+    path: "/blogs",
+  },
+  {
+    name: "Liên hệ",
+    path: "/contact",
+  },
+];
+
+// React Icons For Nav And React.......................
+import { FiUser } from "react-icons/fi";
+import { VscSearch } from "react-icons/vsc";
+import { BsBag } from "react-icons/bs";
+
+// navRight links Data..............................
+export const navRight = {
+  managements: [
     {
-        name:'Home',
-        path:'/'
+      id: 1,
+      icon: FiUser,
+      link: "*",
     },
     {
-        name:'Products',
-        path:'/products'
+      id: 2,
+      icon: BsBag,
+      link: "*",
     },
     {
-        name:'News Products',
-        path:'/newsProducts'
+      id: 3,
+      icon: VscSearch,
+      link: "*",
     },
-    {
-        name:'Blogs',
-        path:'/blogs'
-    },
-    {
-        name:'Contact',
-        path:'/contact'
-    },
-  ];
-  
-  
-  
-  
-  // React Icons For Nav And React.......................
-  import { FiUser } from 'react-icons/fi';
-  import { VscSearch } from 'react-icons/vsc';
-  import { BsBag } from 'react-icons/bs';
-  
-  
-  // navRight links Data..............................
-  export const navRight = {
-    managements: [
-      {
-          id: 1,
-          icon: FiUser,  
-          link: '*'
-      },
-      {
-          id: 2,
-          icon: BsBag,      
-          link: '*'
-      },
-      {
-          id: 3,
-          icon: VscSearch,      
-          link: '*'
-      },
-    ]
-      
-  };
-  
-  
-  
-  
-  // Header Books  Data.......................
-  import HBook1 from '../assets/images/HeaderBooks/headerBook1.png'
-  import HBook2 from '../assets/images/HeaderBooks/headerBook2.png'
-  import HBook3 from '../assets/images/HeaderBooks/headerBook3.png'
-  
-  export const headerBooks =[
-      {
-          id: 1,
-          img: HBook1,
-          title:'Life of the wild',
-          info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat <br> amet, libero ipsum enim pharetra hac. Urna commodo, lacus ut magna <br> velit eleifend. Amet, quis urna, a eu.',
-          btnLink: '*'
-      },
-      {
-          id: 2,
-          img: HBook2,
-          title:'Simple way of piece life',
-          info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat <br> amet, libero ipsum enim pharetra hac. Urna commodo, lacus ut magna <br> velit eleifend. Amet, quis urna, a eu.',
-          btnLink: '*'
-      },
-      {
-          id: 3,
-          img: HBook3,
-          title:'Great travel at desert',
-          info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat <br> amet, libero ipsum enim pharetra hac. Urna commodo, lacus ut magna <br> velit eleifend. Amet, quis urna, a eu.',
-          btnLink: '*'
-      },
-  ];
-  
-  
-  
-  /* Brands Data.......................
-  import Brand1 from '../assets/images/Brands/brand1.png'
-  import Brand2 from '../assets/images/Brands/brand2.png'
-  import Brand3 from '../assets/images/Brands/brand3.png'
-  import Brand4 from '../assets/images/Brands/brand4.png'
-  import Brand5 from '../assets/images/Brands/brand5.png'
-  
-  
-  
-  export const brandsData =[
-      {
-          id: 1,
-          img: Brand1,        
-      },
-      {
-          id: 2,
-          img: Brand2,        
-      },
-      {
-          id: 3,
-          img: Brand3,        
-      },
-      {
-          id: 4,
-          img: Brand4,        
-      },
-      {
-          id: 5,
-          img: Brand5,        
-      },
-  ];
-  */
-  
-  
-  /* Featured Books Data.......................
+  ],
+};
+
+// Header Books  Data.......................
+import HBook1 from "../assets/images/HeaderBooks/headerBook7.png";
+import HBook2 from "../assets/images/HeaderBooks/headerBook8.png";
+import HBook3 from "../assets/images/HeaderBooks/headerBook9.png";
+
+export const headerBooks = [
+  {
+    id: 1,
+    img: HBook1,
+    title: "Đắc Nhân Tâm",
+    info: "Đắc nhân tâm, nghĩa là sống sao cho đẹp lòng người, nhằm tạo dựng một cuộc sống an vui trong đời tư, thiện chí và đầy tinh thần hợp tác trong công việc. Lẽ thường sẽ chẳng bao giờ có một chiếc chìa khóa vạn năng mở ra mọi thành công. Bạn phải thông minh, đắc lực, nhiệt huyết và dấn thân. Nhưng Dale Carnegie sẽ nói rằng còn một điều cốt yếu nữa mà ta phải học: kỹ năng thu phục lòng người.",
+    btnLink: "*",
+  },
+  {
+    id: 2,
+    img: HBook2,
+    title: "Nhà Giả Kim",
+    info: "Đôi khi bạn có rất nhiều hoài bão ước mơ nhưng bạn lại sợ và nghĩ rằng mình cần đợi để nó có đủ đầy các yếu tố rồi hãy thực hiện nó cũng chưa muộn. Thế nhưng thật ra sẽ chẳng bao giờ là đủ cả, chỉ có một cách duy nhất là hiện tại ngay bây giờ bạn hãy bắt tay vào làm, thì bạn mới biết được bạn có thể đi được bao xa mà thôi.",
+    btnLink: "*",
+  },
+  {
+    id: 3,
+    img: HBook3,
+    title: "Sự Im Lặng Của Bầy Cừu",
+    info: "Những vụ án giết người hàng loạt xảy ra không để lại dấu vết, tập sự FBI Clarice Starling được phân công tham vấn tên bác sĩ tâm thần  Hannibal Lecter – tên tội phạm cực kì thông minh và ghê tởm bởi sở thích ăn bộ phận cơ thể của các nạn nhân ông từng giết – để xin lời khuyên về tên giết người, lột da có biệt danh là “Buffalo Bill”.",
+    btnLink: "*",
+  },
+];
+
+//  Brands Data.......................
+import Brand1 from "../assets/images/Brands/brand1.png";
+import Brand2 from "../assets/images/Brands/brand2.png";
+import Brand3 from "../assets/images/Brands/brand3.png";
+import Brand4 from "../assets/images/Brands/brand4.png";
+import Brand5 from "../assets/images/Brands/brand5.png";
+
+export const brandsData = [
+  {
+    id: 1,
+    img: Brand1,
+  },
+  {
+    id: 2,
+    img: Brand2,
+  },
+  {
+    id: 3,
+    img: Brand3,
+  },
+  {
+    id: 4,
+    img: Brand4,
+  },
+  {
+    id: 5,
+    img: Brand5,
+  },
+];
+
+/* Featured Books Data.......................
   import FeaturedBooks1 from '../assets/images/BookProducts/FeaturedBook1.png'
   import FeaturedBooks2 from '../assets/images/BookProducts/FeaturedBook2.png'
   import FeaturedBooks3 from '../assets/images/BookProducts/FeaturedBook3.png'
@@ -341,58 +327,51 @@ export const navLinks =[
    ];
 
    */
-  
-   
-  
-  
-  
-  // import react Icon.......................
-  import {  ImFacebook, ImBehance } from 'react-icons/im';
-  import {  FiInstagram } from 'react-icons/fi';
-  import {  RiTwitterXLine } from 'react-icons/ri';
-  import {  GrLinkedinOption } from 'react-icons/gr';
 
-  // Footers Data .......................  
-  export const FootersLinksData = {
-  
-    Aboutus: [
-      { linkname: 'vision ', link: "*", },    
-      { linkname: 'articles ', link: "*", },    
-      { linkname: 'careers ', link: "*", },    
-      { linkname: 'service terms ', link: "*", },    
-      { linkname: 'donate ', link: "*", },   
-     
-    ],    
-    Discover: [
-      { linkname: 'Home ', link: "*", },    
-      { linkname: 'articles ', link: "*", },    
-      { linkname: 'Books ', link: "*", },    
-      { linkname: 'Authors  ', link: "*", },    
-      { linkname: 'Subjects ', link: "*", },   
-      { linkname: 'Advanced Search ', link: "*", },   
-    ],    
-    Myaccount: [
-      { linkname: 'Sign In', link: "*", },    
-      { linkname: 'articles ', link: "*", },    
-      { linkname: 'View Cart', link: "*", },    
-      { linkname: 'My Wishtlist  ', link: "*", },    
-      { linkname: 'Track My Order ', link: "*", },      
-    ],  
-  
-    Help: [
-      { linkname: 'Help center ', link: "*", },    
-      { linkname: 'Report a problem  ', link: "*", },    
-      { linkname: 'View Cart', link: "*", },    
-      { linkname: 'Suggesting edits ', link: '#' },    
-      { linkname: 'Contact us', link: "*", },   
-    ],  
-  
-    socials: [
-      { icon: ImFacebook, link: 'https://www.facebook.com' },
-      { icon: FiInstagram, link: 'https://www.twitter.com' },
-      { icon: GrLinkedinOption, link: 'https://www.instagram.com' },
-      { icon: RiTwitterXLine, link: 'https://www.twitter.com' },
-      { icon: ImBehance, link: 'https://www.twitter.com' }
-    ],    
-      
-  };
+// import react Icon.......................
+import { ImFacebook, ImBehance } from "react-icons/im";
+import { FiInstagram } from "react-icons/fi";
+import { RiTwitterXLine } from "react-icons/ri";
+import { GrLinkedinOption } from "react-icons/gr";
+
+// Footers Data .......................
+export const FootersLinksData = {
+  Aboutus: [
+    { linkname: "vision ", link: "*" },
+    { linkname: "articles ", link: "*" },
+    { linkname: "careers ", link: "*" },
+    { linkname: "service terms ", link: "*" },
+    { linkname: "donate ", link: "*" },
+  ],
+  Discover: [
+    { linkname: "Home ", link: "*" },
+    { linkname: "articles ", link: "*" },
+    { linkname: "Books ", link: "*" },
+    { linkname: "Authors  ", link: "*" },
+    { linkname: "Subjects ", link: "*" },
+    { linkname: "Advanced Search ", link: "*" },
+  ],
+  Myaccount: [
+    { linkname: "Sign In", link: "*" },
+    { linkname: "articles ", link: "*" },
+    { linkname: "View Cart", link: "*" },
+    { linkname: "My Wishtlist  ", link: "*" },
+    { linkname: "Track My Order ", link: "*" },
+  ],
+
+  Help: [
+    { linkname: "Help center ", link: "*" },
+    { linkname: "Report a problem  ", link: "*" },
+    { linkname: "View Cart", link: "*" },
+    { linkname: "Suggesting edits ", link: "#" },
+    { linkname: "Contact us", link: "*" },
+  ],
+
+  socials: [
+    { icon: ImFacebook, link: "https://www.facebook.com" },
+    { icon: FiInstagram, link: "https://www.twitter.com" },
+    { icon: GrLinkedinOption, link: "https://www.instagram.com" },
+    { icon: RiTwitterXLine, link: "https://www.twitter.com" },
+    { icon: ImBehance, link: "https://www.twitter.com" },
+  ],
+};
