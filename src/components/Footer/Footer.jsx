@@ -18,7 +18,7 @@ export default function Footer() {
             <img className="max-w-[120px]" src={Logo} alt="Logo" />
           </Link>
           <p className="font-bold mt-4">
-            A place to share e-books just for you
+            Nơi chia sẻ sách điện tử dành riêng cho bạn
           </p>
         </div>
         <div className="flex space-x-4 mt-4 md:mt-0">
@@ -35,54 +35,54 @@ export default function Footer() {
       </div>
       <div className="pt-8 text-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         <div className="flex flex-col items-start">
-          <h4 className="font-semibold text-lg py-4">About Us</h4>
+          <h4 className="font-semibold text-lg py-4">Chúng tôi</h4>
           <a href="*" className="text-gray-400 hover:text-primary pb-2">
-            Introduce
+            GIỚI THIỆU
           </a>
           <a href="*" className="text-gray-400 hover:text-primary pb-2">
-            Clause
+            Khoản
           </a>
           <a href="*" className="text-gray-400 hover:text-primary pb-2">
-            Privacy Policy
+            Chính sách bảo mật
           </a>
         </div>
         <div className="flex flex-col items-start">
-          <h4 className="font-semibold text-lg py-4">More Information</h4>
+          <h4 className="font-semibold text-lg py-4">Thêm thông tin</h4>
           <a href="*" className="text-gray-400 hover:text-primary pb-2">
-            Investment Opportunity
+            Cơ hội đầu tư
           </a>
           <a href="*" className="text-gray-400 hover:text-primary pb-2">
-            Recruitment
+            Tuyển dụng
           </a>
           <a href="/contact" className="text-gray-400 hover:text-primary pb-2">
-            Contact
+            Liên hệ
           </a>
           <a href="*" className="text-gray-400 hover:text-primary pb-2">
-            Book Publishing Service
-          </a>
-        </div>
-        <div className="flex flex-col items-start">
-          <h4 className="font-semibold text-lg py-4">Useful Information</h4>
-          <a href="*" className="text-gray-400 hover:text-primary pb-2">
-            Service Usage Agreement
-          </a>
-          <a href="*" className="text-gray-400 hover:text-primary pb-2">
-            Interest
-          </a>
-          <a href="*" className="text-gray-400 hover:text-primary pb-2">
-            Privacy Regulations
+            Dịch vụ xuất bản sách
           </a>
         </div>
         <div className="flex flex-col items-start">
-          <h4 className="font-semibold text-lg py-4">News</h4>
+          <h4 className="font-semibold text-lg py-4">Thông tin hữu ích</h4>
           <a href="*" className="text-gray-400 hover:text-primary pb-2">
-            Service News
+            Thỏa thuận sử dụng dịch vụ
           </a>
           <a href="*" className="text-gray-400 hover:text-primary pb-2">
-            Book Review
+            Quan tâm
           </a>
           <a href="*" className="text-gray-400 hover:text-primary pb-2">
-            Release Schedule
+            Quy định về quyền riêng tư
+          </a>
+        </div>
+        <div className="flex flex-col items-start">
+          <h4 className="font-semibold text-lg py-4">Tin tức</h4>
+          <a href="*" className="text-gray-400 hover:text-primary pb-2">
+            Tin tức dịch vụ
+          </a>
+          <a href="*" className="text-gray-400 hover:text-primary pb-2">
+            Đánh giá sách
+          </a>
+          <a href="*" className="text-gray-400 hover:text-primary pb-2">
+            Lịch phát hành
           </a>
         </div>
       </div>

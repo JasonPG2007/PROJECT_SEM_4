@@ -93,7 +93,7 @@ export default function Navbar() {
                     href="/sign-in"
                     className="border border-white px-4 py-2 rounded-full hover:bg-primaryHover transition-all duration-300 ease-in-out"
                   >
-                    Sign in
+                    Đăng nhập
                   </a>
                 )}
 
@@ -103,15 +103,13 @@ export default function Navbar() {
                       (Cookies.get("offTheVoice") == null && (
                         <li className="py-2 px-4 ">
                           <button onClick={handleClickOff}>
-                            Turn off the voice
+                            Tắt giọng nói
                           </button>
                         </li>
                       ))}
                     {Cookies.get("offTheVoice") === "true" && (
                       <li className="py-2 px-4 ">
-                        <button onClick={handleClickOn}>
-                          Turn on the voice
-                        </button>
+                        <button onClick={handleClickOn}>Bật giọng nói</button>
                       </li>
                     )}
                   </div>
@@ -126,34 +124,34 @@ export default function Navbar() {
                       <ul className="absolute right-0 mt-4 w-48 border bg-black border-white rounded-lg shadow-lg">
                         <li className="py-2 px-4">
                           <a href={`/profile/${Cookies.get("userId")}`}>
-                            Profile
+                            Hồ sơ
                           </a>
                         </li>
                         {Cookies.get("username") === "Admin" && (
                           <li className="py-2 px-4 ">
-                            <a href="/admin/dashboard">Manage</a>
+                            <a href="/admin/dashboard">Quản lí</a>
                           </li>
                         )}
                         <li className="py-2 px-4 ">
-                          <a href="/sign-in">Change account</a>
+                          <a href="/sign-in">Đổi tài khoản</a>
                         </li>
                         {Cookies.get("offTheVoice") === "false" ||
                           (Cookies.get("offTheVoice") == null && (
                             <li className="py-2 px-4 ">
                               <button onClick={handleClickOff}>
-                                Turn off the voice
+                                Tắt giọng nói
                               </button>
                             </li>
                           ))}
                         {Cookies.get("offTheVoice") === "true" && (
                           <li className="py-2 px-4 ">
                             <button onClick={handleClickOn}>
-                              Turn on the voice
+                              Bật giọng nói
                             </button>
                           </li>
                         )}
                         <li className="py-2 px-4 ">
-                          <button onClick={logout}>Sign out</button>
+                          <button onClick={logout}>Đăng xuất</button>
                         </li>
                       </ul>
                     )}

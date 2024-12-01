@@ -64,13 +64,13 @@ export default function FeaturesBooks() {
   return (
     <section className="Featured">
       <div className="container mx-auto relative">
-        <TitleTypeOne Title={"Featured books"} />
+        <TitleTypeOne Title={"SÁCH TIÊU BIỂU"} />
         {/* view all product button  */}
         <Link
           to={"/products"}
           className=" ml-12 flex text-lg font-medium text-white items-center hover:text-primary transition-all duration-300 ease-in-out gap-2"
         >
-          View all
+          Xem tất cả
           <BsArrowReturnRight />
         </Link>
         <Swiper

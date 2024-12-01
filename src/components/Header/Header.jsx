@@ -21,19 +21,18 @@ export default function Header() {
           {/* Text content section  */}
           <div className="flex flex-col flex-wrap justify-center h-full gap-5">
             <h1 className="text-2xl md:text-5xl uppercase font-extrabold">
-              E-books are a modern gateway to ancient wisdom
+              SÁCH ĐIỆN TỬ LÀ CỬA TAY HIỆN ĐẠI ĐẾN TRÍ TUỆ CỔ ĐẠI
             </h1>
             <p className="text-xs md:text-base">
-              Books are no longer just a physical experience, they have
-              transcended into the digital world, expanding the reach of
-              knowledge
+              Sách không còn chỉ là trải nghiệm vật lý mà đã vượt qua thế giới
+              kỹ thuật số, mở rộng phạm vi tri thức
             </p>
             <div>
               <Link
                 to={"/products"}
                 className="rounded border border-transparent bg-primary text-white px-8 md:px-16 py-3 hover:bg-primaryHover hover:shadow-lg transition duration-300 ease-in-out uppercase text-xs md:text-base"
               >
-                Explore Courses
+                Khám phá
               </Link>
             </div>
             {/* Review section  */}
@@ -45,7 +44,7 @@ export default function Header() {
               />
               <div className="flex opacity-80">
                 <p className="text-base md:text-lg">1000+</p>
-                <p className="text-xs md:text-base ml-2">Happy Learners</p>
+                <p className="text-xs md:text-base ml-2">Người dùng</p>
               </div>
             </div>
           </div>

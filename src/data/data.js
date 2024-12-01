@@ -6,11 +6,11 @@ import { GrContact } from "react-icons/gr";
 // Nav [a] Links  Data.......................
 export const navLinks = [
   {
-    name: "Home",
+    name: "Trang chủ",
     path: "/",
   },
   {
-    name: "All Books",
+    name: "Sách",
     path: "/products",
   },
   {
@@ -18,18 +18,18 @@ export const navLinks = [
     path: "/blogs",
   },
   {
-    name: "Contact",
+    name: "Liên hệ",
     path: "/contact",
   },
 ];
 export const navLinksMobile = [
   {
-    name: "Home",
+    name: "Trang chủ",
     path: "/",
     icon: GoHome,
   },
   {
-    name: "All Books",
+    name: "Sách",
     path: "/products",
     icon: MdOutlineDoneAll,
   },
@@ -39,7 +39,7 @@ export const navLinksMobile = [
     icon: FaRegPenToSquare,
   },
   {
-    name: "Contact",
+    name: "Liên hệ",
     path: "/contact",
     icon: GrContact,
   },

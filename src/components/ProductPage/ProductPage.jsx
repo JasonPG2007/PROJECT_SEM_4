@@ -57,7 +57,7 @@ export default function ProductPage() {
               : "bg-gray-200 text-white"
           }`}
         >
-          All
+          Tất cả
         </button>
       </div>
 
