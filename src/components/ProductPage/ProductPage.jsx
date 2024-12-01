@@ -22,7 +22,9 @@ export default function ProductPage() {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/book/books");
+        const response = await axios.get(
+          "https://visually-impaired-people-api.onrender.com/book/books"
+        );
         setBooksData(response.data);
         setErrFetch(response.data);
       } catch (error) {

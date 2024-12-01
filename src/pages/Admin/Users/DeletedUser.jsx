@@ -9,7 +9,9 @@ const DeletedUser = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/user/users");
+        const response = await axios.get(
+          "https://visually-impaired-people-api.onrender.com/user/users"
+        );
         setData(response.data);
         setErr(response.data);
       } catch (error) {

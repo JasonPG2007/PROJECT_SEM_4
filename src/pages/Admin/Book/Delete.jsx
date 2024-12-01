@@ -1,17 +1,19 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React, { useState } from "react";
+import axios from "axios";
 
 const Delete = () => {
-  const [bookId, setBookId] = useState('');
+  const [bookId, setBookId] = useState("");
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:8080/books/${bookId}`);
+      await axios.delete(
+        `https://visually-impaired-people-api.onrender.com/books/${bookId}`
+      );
       alert(`Book with ID ${bookId} deleted successfully`);
-      setBookId('');
+      setBookId("");
     } catch (error) {
-      console.error('Error deleting book:', error);
-      alert('Failed to delete the book. Please check the ID.');
+      console.error("Error deleting book:", error);
+      alert("Failed to delete the book. Please check the ID.");
     }
   };
 

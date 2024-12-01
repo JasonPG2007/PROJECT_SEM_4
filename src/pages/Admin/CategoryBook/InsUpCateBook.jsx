@@ -13,7 +13,7 @@ const InsUpCateBook = () => {
     const fetchCateBook = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/catebook/catebook/${id}`
+          `https://visually-impaired-people-api.onrender.com/catebook/catebook/${id}`
         );
         setCateName(response.data.categoryName);
         setInitialCateName(response.data.categoryName);
@@ -32,7 +32,7 @@ const InsUpCateBook = () => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8080/catebook/insertcatebook",
+        "https://visually-impaired-people-api.onrender.com/catebook/insertcatebook",
         { categoryName: cateName }
       );
       setMsg(response.data);
@@ -55,7 +55,7 @@ const InsUpCateBook = () => {
     } else {
       try {
         const response = await axios.put(
-          `http://localhost:8080/catebook/updatecatebook/${id}`,
+          `https://visually-impaired-people-api.onrender.com/catebook/updatecatebook/${id}`,
           { categoryName: cateName }
         );
         setMsg(response.data);

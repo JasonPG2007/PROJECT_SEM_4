@@ -11,7 +11,7 @@ const CateBook = () => {
     const fetchUsers = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/catebook/catebooks"
+          "https://visually-impaired-people-api.onrender.com/catebook/catebooks"
         );
         setData(response.data);
         setErr(response.data);
@@ -30,7 +30,7 @@ const CateBook = () => {
     event.preventDefault();
     try {
       const response = await axios.delete(
-        `http://localhost:8080/catebook/deletecatebook/${categoryId}`
+        `https://visually-impaired-people-api.onrender.com/catebook/deletecatebook/${categoryId}`
       );
       setMsg(response.data);
       setErr(response.data);

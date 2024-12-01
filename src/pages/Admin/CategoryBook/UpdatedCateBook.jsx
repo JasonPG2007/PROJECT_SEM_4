@@ -10,7 +10,7 @@ const UpdatedCateBook = () => {
     const fetchUsers = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/catebook/updated"
+          "https://visually-impaired-people-api.onrender.com/catebook/updated"
         );
         setData(response.data);
         setErr(response.data);

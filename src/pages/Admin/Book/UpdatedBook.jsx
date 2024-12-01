@@ -11,7 +11,9 @@ const UpdatedBook = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/book/updated");
+        const response = await axios.get(
+          "https://visually-impaired-people-api.onrender.com/book/updated"
+        );
         setBooks(response.data);
         setErr(response.data);
       } catch (error) {
@@ -29,7 +31,7 @@ const UpdatedBook = () => {
     event.preventDefault();
     try {
       const response = await axios.delete(
-        `http://localhost:8080/book/deletebook/${bookId}`
+        `https://visually-impaired-people-api.onrender.com/book/deletebook/${bookId}`
       );
       setMsg(response.data);
       setErr(response.data);

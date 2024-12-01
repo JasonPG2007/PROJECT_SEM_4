@@ -12,7 +12,7 @@ const Book = () => {
     event.preventDefault();
     try {
       const response = await axios.delete(
-        `http://localhost:8080/book/deletebook/${bookId}`
+        `https://visually-impaired-people-api.onrender.com/book/deletebook/${bookId}`
       );
       setMsg(response.data);
       setErr(response.data);
@@ -30,7 +30,9 @@ const Book = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/book/books");
+        const response = await axios.get(
+          "https://visually-impaired-people-api.onrender.com/book/books"
+        );
         setBooks(response.data);
         setErrFetch(response.data);
       } catch (error) {

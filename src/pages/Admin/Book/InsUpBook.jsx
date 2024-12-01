@@ -19,7 +19,7 @@ const InsUpBook = () => {
     const fetchCateBook = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/book/book/${id}`
+          `https://visually-impaired-people-api.onrender.com/book/book/${id}`
         );
         setCategoryId(response.data.categoryId);
         setBookName(response.data.bookName);
@@ -41,7 +41,7 @@ const InsUpBook = () => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8080/book/insertbook",
+        "https://visually-impaired-people-api.onrender.com/book/insertbook",
         {
           categoryId: categoryId,
           bookName: bookName,
@@ -72,7 +72,7 @@ const InsUpBook = () => {
     } else {
       try {
         const response = await axios.put(
-          `http://localhost:8080/book/updatebook/${id}`,
+          `https://visually-impaired-people-api.onrender.com/book/updatebook/${id}`,
           {
             categoryId: categoryId,
             bookName: bookName,

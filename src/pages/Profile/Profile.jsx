@@ -22,7 +22,7 @@ const Profile = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:8080/user/user/${id}`
+          `https://visually-impaired-people-api.onrender.com/user/user/${id}`
         );
         setData(response.data);
         setError(response.data);
@@ -41,7 +41,9 @@ const Profile = () => {
   const handleDelete = async () => {
     try {
       const response = await axios.put(
-        `http://localhost:8080/user/updateuser/${Cookies.get("userId")}`,
+        `https://visually-impaired-people-api.onrender.com/user/updateuser/${Cookies.get(
+          "userId"
+        )}`,
         {
           userId: Cookies.get("userId"),
           username: data.username,

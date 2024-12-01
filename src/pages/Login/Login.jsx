@@ -12,7 +12,7 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch("http://localhost:8080/user/login", {
+    fetch("https://visually-impaired-people-api.onrender.com/user/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
