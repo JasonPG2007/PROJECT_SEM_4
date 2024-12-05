@@ -129,7 +129,7 @@ export default function Navbar() {
                         </li>
                         {Cookies.get("username") === "Admin" && (
                           <li className="py-2 px-4 ">
-                            <a href="/admin/dashboard">Quản lí</a>
+                            <a href="/admin/dashboard">Quản trị</a>
                           </li>
                         )}
                         <li className="py-2 px-4 ">
