@@ -21,7 +21,7 @@ export default function Header() {
           {/* Text content section  */}
           <div className="flex flex-col flex-wrap justify-center h-full gap-5">
             <h1 className="text-2xl md:text-5xl uppercase font-extrabold">
-              SÁCH ĐIỆN TỬ LÀ CỬA TAY HIỆN ĐẠI ĐẾN TRÍ TUỆ CỔ ĐẠI
+              CÁNH CỬA HIỆN ĐẠI DẪN LỐI ĐẾN TRI THỨC NHÂN LOẠI
             </h1>
             <p className="text-xs md:text-base">
               Sách không còn chỉ là trải nghiệm vật lý mà đã vượt qua thế giới
