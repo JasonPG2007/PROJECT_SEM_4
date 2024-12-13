@@ -78,7 +78,39 @@ const Book = () => {
                     <td>{book.author}</td>
                     <td>{book.publisher}</td>
                     <td>{book.bookPrice}</td>
-                    <td>{book.bookDescription}</td>
+                    <td>
+                      <div
+                        style={{
+                          maxWidth: "150px", // Giới hạn chiều rộng
+                          whiteSpace: "nowrap", // Không xuống dòng
+                          overflow: "hidden", // Ẩn nội dung tràn
+                          textOverflow: "ellipsis", // Thêm dấu "..."
+                          cursor: "pointer", // Thay đổi con trỏ khi hover
+                          position: "relative", // Cần để hover hoạt động
+                        }}
+                        onMouseEnter={(e) => {
+                          e.target.style.whiteSpace = "normal";
+                          e.target.style.maxWidth = "none";
+                          e.target.style.backgroundColor = "#f9f9f9";
+                          e.target.style.zIndex = "10";
+                          e.target.style.border = "1px solid #ddd";
+                          e.target.style.padding = "5px";
+                          e.target.style.position = "absolute";
+                        }}
+                        onMouseLeave={(e) => {
+                          e.target.style.whiteSpace = "nowrap";
+                          e.target.style.maxWidth = "150px";
+                          e.target.style.backgroundColor = "transparent";
+                          e.target.style.zIndex = "1";
+                          e.target.style.border = "none";
+                          e.target.style.padding = "0";
+                          e.target.style.position = "relative";
+                        }}
+                      >
+                        {book.bookDescription}
+                      </div>
+                    </td>
+
                     <td>
                       <img
                         src={`../${book.picture}`}
