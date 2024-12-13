@@ -75,11 +75,11 @@ const VoiceControl = () => {
         setResponse("Scroll to the bottom successfully");
         break;
       case "blogs":
-        window.location.href = "/blogs";
+        window.location.href = "blogs";
         setResponse("Moved to the blogs page");
         break;
       case "contact":
-        window.location.href = "/contact";
+        window.location.href = "contact";
         setResponse("Moved to the contact page");
         break;
       case "help me":
@@ -91,23 +91,23 @@ const VoiceControl = () => {
         setResponse("Up successfully");
         break;
       case "sign up":
-        window.location.href = "/sign-up";
+        window.location.href = "sign-up";
         setResponse("Moved to the sign up page");
         break;
       case "profile":
-        window.location.href = `/profile/${Cookies.get("userId")}`;
+        window.location.href = `profile/${Cookies.get("userId")}`;
         setResponse("Moved to the profile page");
         break;
       case "books":
-        window.location.href = "/products";
+        window.location.href = "products";
         setResponse("Moved to all book page");
         break;
       case "sign out":
-        window.location.href = "/sign-out";
+        window.location.href = "sign-out";
         setResponse("Signed out successfully");
         break;
       case "sign in":
-        window.location.href = "/sign-in";
+        window.location.href = "sign-in";
         setResponse("Moved to the sign in page");
         break;
       case "normal":
