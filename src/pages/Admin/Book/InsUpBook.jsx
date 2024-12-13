@@ -103,7 +103,7 @@ const InsUpBook = () => {
       {location.pathname.includes("create") && <h1>Create</h1>}
       <br />
       <h5 style={{ color: "red" }}>{error}</h5>
-      <form>
+      <form encType="multipart/form-data">
         <label htmlFor="categoryId">Category Id</label>
         <div className="col-md-4">
           <input
