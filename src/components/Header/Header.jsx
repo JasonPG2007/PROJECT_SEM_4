@@ -44,7 +44,7 @@ export default function Header() {
               />
               <div className="flex opacity-80">
                 <p className="text-base md:text-lg">1000+</p>
-                <p className="text-xs md:text-base ml-2">Người dùng</p>
+                <p className="text-xs md:text-base ml-2">Happy learners</p>
               </div>
             </div>
           </div>
