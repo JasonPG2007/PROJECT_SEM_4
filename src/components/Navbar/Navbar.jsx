@@ -93,7 +93,7 @@ export default function Navbar() {
                     href="/sign-in"
                     className="border border-white px-4 py-2 rounded-full hover:bg-primaryHover transition-all duration-300 ease-in-out"
                   >
-                    Đăng nhập
+                    Login
                   </a>
                 )}
 
@@ -102,14 +102,12 @@ export default function Navbar() {
                     {Cookies.get("offTheVoice") === "false" ||
                       (Cookies.get("offTheVoice") == null && (
                         <li className="py-2 px-4 ">
-                          <button onClick={handleClickOff}>
-                            Tắt giọng nói
-                          </button>
+                          <button onClick={handleClickOff}>Voice off</button>
                         </li>
                       ))}
                     {Cookies.get("offTheVoice") === "true" && (
                       <li className="py-2 px-4 ">
-                        <button onClick={handleClickOn}>Bật giọng nói</button>
+                        <button onClick={handleClickOn}>Voice on</button>
                       </li>
                     )}
                   </div>
